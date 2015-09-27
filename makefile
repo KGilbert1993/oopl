@@ -27,9 +27,13 @@ pull:
     --include "Exceptions.c++"              \
     --include "Exceptions2.c++"             \
     --include "Exceptions3.c++"             \
+    --include "Variables.c++"               \
+    --include "Arguments.c++"               \
+    --include "Returns.c++"                 \
+    --include "Cache.c++"                   \
     --include "Types.c++"                   \
-    --include "Operators.c++"               \
     --include "Representations.c++"         \
+    --include "Operators.c++"               \
     --exclude "*"                           \
     ../../../examples/c++/ examples
 	@rsync -r -t -u -v --delete             \
@@ -39,6 +43,10 @@ pull:
     --include "IsPrime2.h"                  \
     --include "StrCmp.c++"                  \
     --include "StrCmp.h"                    \
+    --include "Incr.c++"                    \
+    --include "Incr.h"                      \
+    --include "Equal.h"                     \
+    --include "Equal.c++"                   \
     --exclude "*"                           \
     ../../../exercises/c++/ exercises
 

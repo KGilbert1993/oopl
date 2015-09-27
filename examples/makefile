@@ -7,9 +7,13 @@ FILES :=              \
     Exceptions        \
     Exceptions2       \
     Exceptions3       \
+    Variables         \
+    Arguments         \
+    Returns           \
+    Cache             \
     Types             \
-    Operators         \
-    Representations
+    Representations   \
+    Operators
 
 CXX        := g++-4.8
 CXXFLAGS   := -pedantic -std=c++11 -Wall
