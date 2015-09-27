@@ -1,0 +1,172 @@
+g++  StrCmp.c++ -o StrCmp -lgtest -lgtest_main -pthread
+StrCmp.c++:18:7: error: expected nested-name-specifier before ‘Str_Cmp_Signature’
+StrCmp.c++:18:7: error: ‘Str_Cmp_Signature’ has not been declared
+StrCmp.c++:18:25: error: expected ‘;’ before ‘=’ token
+StrCmp.c++:18:25: error: expected unqualified-id before ‘=’ token
+StrCmp.c++:20:40: error: ‘Str_Cmp_Signature’ was not declared in this scope
+StrCmp.c++:20:57: error: template argument 1 is invalid
+StrCmp.c++:22:1: error: ‘ParamType’ is not a member of ‘Str_Cmp_Fixture’
+StrCmp.c++:22:1: error: ‘ParamType’ is not a member of ‘Str_Cmp_Fixture’
+StrCmp.c++:22:1: error: template argument 1 is invalid
+StrCmp.c++: In function ‘int gtest_Str_Cmp_InstantiationStr_Cmp_Fixture_EvalGenerator_()’:
+StrCmp.c++:22:1: error: cannot convert ‘testing::internal::ValueArray2<int (*)(const char*, const char*)throw (), int (*)(const char*, const char*)>’ to ‘int’ in return
+In file included from /usr/local/include/gtest/gtest-param-test.h:192:0,
+                 from /usr/local/include/gtest/gtest.h:62,
+                 from StrCmp.c++:11:
+/usr/local/include/gtest/internal/gtest-param-util.h: In instantiation of ‘class testing::internal::ParameterizedTestCaseInfo<Str_Cmp_Fixture>’:
+StrCmp.c++:22:1:   required from here
+/usr/local/include/gtest/internal/gtest-param-util.h:449:40: error: no type named ‘ParamType’ in ‘struct Str_Cmp_Fixture’
+/usr/local/include/gtest/internal/gtest-param-util.h:451:60: error: no type named ‘ParamType’ in ‘struct Str_Cmp_Fixture’
+/usr/local/include/gtest/internal/gtest-param-util.h:466:8: error: no type named ‘ParamType’ in ‘struct Str_Cmp_Fixture’
+/usr/local/include/gtest/internal/gtest-param-util.h:541:7: error: no type named ‘ParamType’ in ‘struct Str_Cmp_Fixture’
+StrCmp.c++: At global scope:
+StrCmp.c++:22:1: error: ‘class testing::internal::ParameterizedTestCaseInfo<Str_Cmp_Fixture>’ has no member named ‘AddTestCaseInstantiation’
+StrCmp.c++: In static member function ‘static int Str_Cmp_Fixture_test_1_Test::AddToRegistry()’:
+StrCmp.c++:29:1: error: ‘class testing::internal::ParameterizedTestCaseInfo<Str_Cmp_Fixture>’ has no member named ‘AddTestPattern’
+In file included from /usr/local/include/gtest/gtest-param-test.h:192:0,
+                 from /usr/local/include/gtest/gtest.h:62,
+                 from StrCmp.c++:11:
+/usr/local/include/gtest/internal/gtest-param-util.h: In instantiation of ‘class testing::internal::TestMetaFactory<Str_Cmp_Fixture_test_1_Test>’:
+StrCmp.c++:29:1:   required from here
+/usr/local/include/gtest/internal/gtest-param-util.h:390:7: error: no type named ‘ParamType’ in ‘class Str_Cmp_Fixture_test_1_Test’
+/usr/local/include/gtest/internal/gtest-param-util.h:393:40: error: no type named ‘ParamType’ in ‘class Str_Cmp_Fixture_test_1_Test’
+StrCmp.c++: In member function ‘virtual void Str_Cmp_Fixture_test_1_Test::TestBody()’:
+StrCmp.c++:30:2: error: ‘GetParam’ was not declared in this scope
+StrCmp.c++:30:2: error: template argument 1 is invalid
+StrCmp.c++: In static member function ‘static int Str_Cmp_Fixture_test_2_Test::AddToRegistry()’:
+StrCmp.c++:32:1: error: ‘class testing::internal::ParameterizedTestCaseInfo<Str_Cmp_Fixture>’ has no member named ‘AddTestPattern’
+In file included from /usr/local/include/gtest/gtest-param-test.h:192:0,
+                 from /usr/local/include/gtest/gtest.h:62,
+                 from StrCmp.c++:11:
+/usr/local/include/gtest/internal/gtest-param-util.h: In instantiation of ‘class testing::internal::TestMetaFactory<Str_Cmp_Fixture_test_2_Test>’:
+StrCmp.c++:32:1:   required from here
+/usr/local/include/gtest/internal/gtest-param-util.h:390:7: error: no type named ‘ParamType’ in ‘class Str_Cmp_Fixture_test_2_Test’
+/usr/local/include/gtest/internal/gtest-param-util.h:393:40: error: no type named ‘ParamType’ in ‘class Str_Cmp_Fixture_test_2_Test’
+StrCmp.c++: In member function ‘virtual void Str_Cmp_Fixture_test_2_Test::TestBody()’:
+StrCmp.c++:33:2: error: ‘GetParam’ was not declared in this scope
+StrCmp.c++:33:2: error: template argument 1 is invalid
+StrCmp.c++: In static member function ‘static int Str_Cmp_Fixture_test_3_Test::AddToRegistry()’:
+StrCmp.c++:35:1: error: ‘class testing::internal::ParameterizedTestCaseInfo<Str_Cmp_Fixture>’ has no member named ‘AddTestPattern’
+In file included from /usr/local/include/gtest/gtest-param-test.h:192:0,
+                 from /usr/local/include/gtest/gtest.h:62,
+                 from StrCmp.c++:11:
+/usr/local/include/gtest/internal/gtest-param-util.h: In instantiation of ‘class testing::internal::TestMetaFactory<Str_Cmp_Fixture_test_3_Test>’:
+StrCmp.c++:35:1:   required from here
+/usr/local/include/gtest/internal/gtest-param-util.h:390:7: error: no type named ‘ParamType’ in ‘class Str_Cmp_Fixture_test_3_Test’
+/usr/local/include/gtest/internal/gtest-param-util.h:393:40: error: no type named ‘ParamType’ in ‘class Str_Cmp_Fixture_test_3_Test’
+StrCmp.c++: In member function ‘virtual void Str_Cmp_Fixture_test_3_Test::TestBody()’:
+StrCmp.c++:36:2: error: ‘GetParam’ was not declared in this scope
+StrCmp.c++:36:2: error: template argument 1 is invalid
+StrCmp.c++: In static member function ‘static int Str_Cmp_Fixture_test_4_Test::AddToRegistry()’:
+StrCmp.c++:38:1: error: ‘class testing::internal::ParameterizedTestCaseInfo<Str_Cmp_Fixture>’ has no member named ‘AddTestPattern’
+In file included from /usr/local/include/gtest/gtest-param-test.h:192:0,
+                 from /usr/local/include/gtest/gtest.h:62,
+                 from StrCmp.c++:11:
+/usr/local/include/gtest/internal/gtest-param-util.h: In instantiation of ‘class testing::internal::TestMetaFactory<Str_Cmp_Fixture_test_4_Test>’:
+StrCmp.c++:38:1:   required from here
+/usr/local/include/gtest/internal/gtest-param-util.h:390:7: error: no type named ‘ParamType’ in ‘class Str_Cmp_Fixture_test_4_Test’
+/usr/local/include/gtest/internal/gtest-param-util.h:393:40: error: no type named ‘ParamType’ in ‘class Str_Cmp_Fixture_test_4_Test’
+StrCmp.c++: In member function ‘virtual void Str_Cmp_Fixture_test_4_Test::TestBody()’:
+StrCmp.c++:39:2: error: ‘GetParam’ was not declared in this scope
+StrCmp.c++:39:2: error: template argument 1 is invalid
+StrCmp.c++: In static member function ‘static int Str_Cmp_Fixture_test_5_Test::AddToRegistry()’:
+StrCmp.c++:41:1: error: ‘class testing::internal::ParameterizedTestCaseInfo<Str_Cmp_Fixture>’ has no member named ‘AddTestPattern’
+In file included from /usr/local/include/gtest/gtest-param-test.h:192:0,
+                 from /usr/local/include/gtest/gtest.h:62,
+                 from StrCmp.c++:11:
+/usr/local/include/gtest/internal/gtest-param-util.h: In instantiation of ‘class testing::internal::TestMetaFactory<Str_Cmp_Fixture_test_5_Test>’:
+StrCmp.c++:41:1:   required from here
+/usr/local/include/gtest/internal/gtest-param-util.h:390:7: error: no type named ‘ParamType’ in ‘class Str_Cmp_Fixture_test_5_Test’
+/usr/local/include/gtest/internal/gtest-param-util.h:393:40: error: no type named ‘ParamType’ in ‘class Str_Cmp_Fixture_test_5_Test’
+StrCmp.c++: In member function ‘virtual void Str_Cmp_Fixture_test_5_Test::TestBody()’:
+StrCmp.c++:42:2: error: ‘GetParam’ was not declared in this scope
+StrCmp.c++:42:2: error: template argument 1 is invalid
+StrCmp.c++: In static member function ‘static int Str_Cmp_Fixture_test_6_Test::AddToRegistry()’:
+StrCmp.c++:44:1: error: ‘class testing::internal::ParameterizedTestCaseInfo<Str_Cmp_Fixture>’ has no member named ‘AddTestPattern’
+In file included from /usr/local/include/gtest/gtest-param-test.h:192:0,
+                 from /usr/local/include/gtest/gtest.h:62,
+                 from StrCmp.c++:11:
+/usr/local/include/gtest/internal/gtest-param-util.h: In instantiation of ‘class testing::internal::TestMetaFactory<Str_Cmp_Fixture_test_6_Test>’:
+StrCmp.c++:44:1:   required from here
+/usr/local/include/gtest/internal/gtest-param-util.h:390:7: error: no type named ‘ParamType’ in ‘class Str_Cmp_Fixture_test_6_Test’
+/usr/local/include/gtest/internal/gtest-param-util.h:393:40: error: no type named ‘ParamType’ in ‘class Str_Cmp_Fixture_test_6_Test’
+StrCmp.c++: In member function ‘virtual void Str_Cmp_Fixture_test_6_Test::TestBody()’:
+StrCmp.c++:45:2: error: ‘GetParam’ was not declared in this scope
+StrCmp.c++:45:2: error: template argument 1 is invalid
+StrCmp.c++: In static member function ‘static int Str_Cmp_Fixture_test_7_Test::AddToRegistry()’:
+StrCmp.c++:47:1: error: ‘class testing::internal::ParameterizedTestCaseInfo<Str_Cmp_Fixture>’ has no member named ‘AddTestPattern’
+In file included from /usr/local/include/gtest/gtest-param-test.h:192:0,
+                 from /usr/local/include/gtest/gtest.h:62,
+                 from StrCmp.c++:11:
+/usr/local/include/gtest/internal/gtest-param-util.h: In instantiation of ‘class testing::internal::TestMetaFactory<Str_Cmp_Fixture_test_7_Test>’:
+StrCmp.c++:47:1:   required from here
+/usr/local/include/gtest/internal/gtest-param-util.h:390:7: error: no type named ‘ParamType’ in ‘class Str_Cmp_Fixture_test_7_Test’
+/usr/local/include/gtest/internal/gtest-param-util.h:393:40: error: no type named ‘ParamType’ in ‘class Str_Cmp_Fixture_test_7_Test’
+StrCmp.c++: In member function ‘virtual void Str_Cmp_Fixture_test_7_Test::TestBody()’:
+StrCmp.c++:48:2: error: ‘GetParam’ was not declared in this scope
+StrCmp.c++:48:2: error: template argument 1 is invalid
+StrCmp.c++: In static member function ‘static int Str_Cmp_Fixture_test_8_Test::AddToRegistry()’:
+StrCmp.c++:50:1: error: ‘class testing::internal::ParameterizedTestCaseInfo<Str_Cmp_Fixture>’ has no member named ‘AddTestPattern’
+In file included from /usr/local/include/gtest/gtest-param-test.h:192:0,
+                 from /usr/local/include/gtest/gtest.h:62,
+                 from StrCmp.c++:11:
+/usr/local/include/gtest/internal/gtest-param-util.h: In instantiation of ‘class testing::internal::TestMetaFactory<Str_Cmp_Fixture_test_8_Test>’:
+StrCmp.c++:50:1:   required from here
+/usr/local/include/gtest/internal/gtest-param-util.h:390:7: error: no type named ‘ParamType’ in ‘class Str_Cmp_Fixture_test_8_Test’
+/usr/local/include/gtest/internal/gtest-param-util.h:393:40: error: no type named ‘ParamType’ in ‘class Str_Cmp_Fixture_test_8_Test’
+StrCmp.c++: In member function ‘virtual void Str_Cmp_Fixture_test_8_Test::TestBody()’:
+StrCmp.c++:51:2: error: ‘GetParam’ was not declared in this scope
+StrCmp.c++:51:2: error: template argument 1 is invalid
+StrCmp.c++: In static member function ‘static int Str_Cmp_Fixture_test_9_Test::AddToRegistry()’:
+StrCmp.c++:53:1: error: ‘class testing::internal::ParameterizedTestCaseInfo<Str_Cmp_Fixture>’ has no member named ‘AddTestPattern’
+In file included from /usr/local/include/gtest/gtest-param-test.h:192:0,
+                 from /usr/local/include/gtest/gtest.h:62,
+                 from StrCmp.c++:11:
+/usr/local/include/gtest/internal/gtest-param-util.h: In instantiation of ‘class testing::internal::TestMetaFactory<Str_Cmp_Fixture_test_9_Test>’:
+StrCmp.c++:53:1:   required from here
+/usr/local/include/gtest/internal/gtest-param-util.h:390:7: error: no type named ‘ParamType’ in ‘class Str_Cmp_Fixture_test_9_Test’
+/usr/local/include/gtest/internal/gtest-param-util.h:393:40: error: no type named ‘ParamType’ in ‘class Str_Cmp_Fixture_test_9_Test’
+StrCmp.c++: In member function ‘virtual void Str_Cmp_Fixture_test_9_Test::TestBody()’:
+StrCmp.c++:54:2: error: ‘GetParam’ was not declared in this scope
+StrCmp.c++:54:2: error: template argument 1 is invalid
+StrCmp.c++: In static member function ‘static int Str_Cmp_Fixture_test_10_Test::AddToRegistry()’:
+StrCmp.c++:56:1: error: ‘class testing::internal::ParameterizedTestCaseInfo<Str_Cmp_Fixture>’ has no member named ‘AddTestPattern’
+In file included from /usr/local/include/gtest/gtest-param-test.h:192:0,
+                 from /usr/local/include/gtest/gtest.h:62,
+                 from StrCmp.c++:11:
+/usr/local/include/gtest/internal/gtest-param-util.h: In instantiation of ‘class testing::internal::TestMetaFactory<Str_Cmp_Fixture_test_10_Test>’:
+StrCmp.c++:56:1:   required from here
+/usr/local/include/gtest/internal/gtest-param-util.h:390:7: error: no type named ‘ParamType’ in ‘class Str_Cmp_Fixture_test_10_Test’
+/usr/local/include/gtest/internal/gtest-param-util.h:393:40: error: no type named ‘ParamType’ in ‘class Str_Cmp_Fixture_test_10_Test’
+StrCmp.c++: In member function ‘virtual void Str_Cmp_Fixture_test_10_Test::TestBody()’:
+StrCmp.c++:57:2: error: ‘GetParam’ was not declared in this scope
+StrCmp.c++:57:2: error: template argument 1 is invalid
+In file included from /usr/local/include/gtest/gtest-param-test.h:192:0,
+                 from /usr/local/include/gtest/gtest.h:62,
+                 from StrCmp.c++:11:
+/usr/local/include/gtest/internal/gtest-param-util.h: In instantiation of ‘struct testing::internal::ParameterizedTestCaseInfo<Str_Cmp_Fixture>::TestInfo’:
+/usr/include/c++/4.7/bits/stl_construct.h:155:7:   required from ‘void std::_Destroy(_ForwardIterator, _ForwardIterator, std::allocator<_T2>&) [with _ForwardIterator = testing::internal::linked_ptr<testing::internal::ParameterizedTestCaseInfo<Str_Cmp_Fixture>::TestInfo>*; _Tp = testing::internal::linked_ptr<testing::internal::ParameterizedTestCaseInfo<Str_Cmp_Fixture>::TestInfo>]’
+/usr/include/c++/4.7/bits/stl_vector.h:403:9:   required from ‘std::vector<_Tp, _Alloc>::~vector() [with _Tp = testing::internal::linked_ptr<testing::internal::ParameterizedTestCaseInfo<Str_Cmp_Fixture>::TestInfo>; _Alloc = std::allocator<testing::internal::linked_ptr<testing::internal::ParameterizedTestCaseInfo<Str_Cmp_Fixture>::TestInfo> >]’
+/usr/local/include/gtest/internal/gtest-param-util.h:454:29:   required from ‘testing::internal::ParameterizedTestCaseInfo<TestCase>::ParameterizedTestCaseInfo(const char*) [with TestCase = Str_Cmp_Fixture]’
+/usr/local/include/gtest/internal/gtest-param-util.h:594:7:   required from ‘testing::internal::ParameterizedTestCaseInfo<TestCase>* testing::internal::ParameterizedTestCaseRegistry::GetTestCasePatternHolder(const char*, const char*, int) [with TestCase = Str_Cmp_Fixture]’
+StrCmp.c++:22:1:   required from here
+/usr/local/include/gtest/internal/gtest-param-util.h:526:5: error: no type named ‘ParamType’ in ‘struct Str_Cmp_Fixture’
+/usr/local/include/gtest/internal/gtest-param-util.h:535:55: error: no type named ‘ParamType’ in ‘struct Str_Cmp_Fixture’
+/usr/local/include/gtest/internal/gtest-param-util.h: In instantiation of ‘void testing::internal::ParameterizedTestCaseInfo<TestCase>::RegisterTests() [with TestCase = Str_Cmp_Fixture]’:
+StrCmp.c++:57:42:   required from here
+/usr/local/include/gtest/internal/gtest-param-util.h:491:54: error: no type named ‘ParamType’ in ‘struct Str_Cmp_Fixture’
+/usr/local/include/gtest/internal/gtest-param-util.h:492:38: error: using invalid field ‘testing::internal::ParameterizedTestCaseInfo<TestCase>::instantiations_’
+/usr/local/include/gtest/internal/gtest-param-util.h:491:54: error: no type named ‘ParamType’ in ‘struct Str_Cmp_Fixture’
+/usr/local/include/gtest/internal/gtest-param-util.h:491:54: error: no type named ‘ParamType’ in ‘struct Str_Cmp_Fixture’
+/usr/local/include/gtest/internal/gtest-param-util.h:491:54: error: no type named ‘ParamType’ in ‘struct Str_Cmp_Fixture’
+/usr/local/include/gtest/internal/gtest-param-util.h:495:35: error: no type named ‘ParamType’ in ‘struct Str_Cmp_Fixture’
+/usr/local/include/gtest/internal/gtest-param-util.h:503:59: error: no type named ‘ParamType’ in ‘struct Str_Cmp_Fixture’
+/usr/local/include/gtest/internal/gtest-param-util.h:495:35: error: no type named ‘ParamType’ in ‘struct Str_Cmp_Fixture’
+/usr/local/include/gtest/internal/gtest-param-util.h:503:59: error: no type named ‘ParamType’ in ‘struct Str_Cmp_Fixture’
+/usr/local/include/gtest/internal/gtest-param-util.h:503:59: error: no type named ‘ParamType’ in ‘struct Str_Cmp_Fixture’
+/usr/local/include/gtest/internal/gtest-param-util.h:503:59: error: no type named ‘ParamType’ in ‘struct Str_Cmp_Fixture’
+/usr/local/include/gtest/internal/gtest-param-util.h:508:11: error: ‘SetUpTestCase’ is not a member of ‘Str_Cmp_Fixture’
+/usr/local/include/gtest/internal/gtest-param-util.h:508:11: error: ‘TearDownTestCase’ is not a member of ‘Str_Cmp_Fixture’
+/usr/local/include/gtest/internal/gtest-param-util.h:508:11: error: ‘struct testing::internal::ParameterizedTestCaseInfo<Str_Cmp_Fixture>::TestInfo’ has no member named ‘test_meta_factory’
+/usr/local/include/gtest/internal/gtest-param-util.h:503:59: error: no type named ‘ParamType’ in ‘struct Str_Cmp_Fixture’
+make: *** [strcmp] Error 1
