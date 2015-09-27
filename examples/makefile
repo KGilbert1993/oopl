@@ -13,7 +13,12 @@ FILES :=              \
     Cache             \
     Types             \
     Representations   \
-    Operators
+    Operators         \
+    Selection         \
+    Iteration         \
+    Lambdas           \
+    StackVsHeap       \
+    Valgrind
 
 CXX        := g++-4.8
 CXXFLAGS   := -pedantic -std=c++11 -Wall
