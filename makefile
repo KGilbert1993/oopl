@@ -29,8 +29,8 @@ pull:
     --include "Exceptions3.c++"             \
     --include "Variables.c++"               \
     --include "Arguments.c++"               \
-    --include "Cache.c++"                   \
     --include "Returns.c++"                 \
+    --include "Cache.c++"                   \
     --include "Types.c++"                   \
     --include "Representations.c++"         \
     --include "Operators.c++"               \

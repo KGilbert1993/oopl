@@ -2,6 +2,8 @@ FILES :=     \
     IsPrime1 \
     IsPrime2 \
     StrCmp   \
+    Incr     \
+    Equal
 
 CXX        := g++-4.8
 CXXFLAGS   := -pedantic -std=c++11 -Wall
