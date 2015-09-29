@@ -43,10 +43,10 @@ pull:
     --include "IsPrime2.h"                  \
     --include "StrCmp.c++"                  \
     --include "StrCmp.h"                    \
-    --include "Incr.c++"                    \
-    --include "Incr.h"                      \
     --include "Equal.h"                     \
     --include "Equal.c++"                   \
+    --include "Incr.c++"                    \
+    --include "Incr.h"                      \
     --exclude "*"                           \
     ../../../exercises/c++/ exercises
 
