@@ -34,19 +34,13 @@ int main(int argc, char **argv) {
 
     int ladder_start = 0;
     for(auto i : ladder) {
-        static int prev_i;
         #ifdef DEBUG
         cout << i << endl;
         #endif
-        if(i == start) {
+        if(i <= start) {
             ladder_start = i;
             break;
         }
-        if(i < start) {
-            ladder_start = i;
-            break;
-        }
-        prev_i = i;
     }
     
     steps = start - ladder_start;
