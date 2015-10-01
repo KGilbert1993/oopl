@@ -34,6 +34,11 @@ pull:
     --include "Types.c++"                   \
     --include "Representations.c++"         \
     --include "Operators.c++"               \
+    --include "Selection.c++"               \
+    --include "Iteration.c++"               \
+    --include "Lambdas.c++"                 \
+    --include "StackVsHeap.c++"             \
+    --include "Valgrind.c++"                \
     --exclude "*"                           \
     ../../../examples/c++/ examples
 	@rsync -r -t -u -v --delete             \
@@ -47,8 +52,15 @@ pull:
     --include "Equal.c++"                   \
     --include "Incr.c++"                    \
     --include "Incr.h"                      \
+    --include "Copy.c++"                    \
+    --include "Fill.c++"                    \
+    --include "AllOf.c++"                   \
     --exclude "*"                           \
     ../../../exercises/c++/ exercises
+
+#    --include "Copy.h"                      \
+#    --include "Fill.h"                      \
+#    --include "AllOf.h"                     \
 
 push:
 	make clean
