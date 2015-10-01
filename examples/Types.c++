@@ -109,20 +109,12 @@ int main () {
     {
     ostringstream out;
     out << numeric_limits<long double>::min();
-    #ifdef __APPLE__
-        assert(out.str() == "3.3621e-4932");
-    #else
-        assert(out.str() == "3.3621e-4932");
-    #endif
+    assert(out.str() == "3.3621e-4932");
     }
     {
     ostringstream out;
     out << numeric_limits<long double>::max();
-    #ifdef __APPLE__
-        assert(out.str() == "1.18973e+4932");
-    #else
-        assert(out.str() == "1.18973e+4932");
-    #endif
+    assert(out.str() == "1.18973e+4932");
     }
 
     {
