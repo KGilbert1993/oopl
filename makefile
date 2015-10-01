@@ -52,15 +52,14 @@ pull:
     --include "Equal.c++"                   \
     --include "Incr.c++"                    \
     --include "Incr.h"                      \
+    --include "Copy.h"                      \
     --include "Copy.c++"                    \
+    --include "Fill.h"                      \
     --include "Fill.c++"                    \
+    --include "AllOf.h"                     \
     --include "AllOf.c++"                   \
     --exclude "*"                           \
     ../../../exercises/c++/ exercises
-
-#    --include "Copy.h"                      \
-#    --include "Fill.h"                      \
-#    --include "AllOf.h"                     \
 
 push:
 	make clean
