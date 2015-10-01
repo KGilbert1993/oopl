@@ -271,5 +271,81 @@ int main () {
     }
     }
 
+
+
+    {
+    int i = 1;
+
+//  UF1  f = [&i] (int j) -> int {return i++ + j;}; // error: no viable conversion from '(lambda at Lambdas.c++:109:14)' to 'UF1' (aka 'int (*)(int)')
+    UF2  g = [&i] (int j) -> int {return i++ + j;};
+    auto h = [&i] (int j) -> int {return i++ + j;};
+
+    ++i;
+
+    assert([&i] (int j) -> int {return i++ + j;}(3) == 5);
+    assert(                                    g(3) == 6);
+    assert(                                    h(3) == 7);
+
+    {
+    list<int>   x = {2, 3, 4};
+    vector<int> y(3);
+    list<int>   z = {7, 9, 11};
+    transform(x.begin(), x.end(), y.begin(), [&i] (int j) -> int {return i++ + j;});
+    assert(equal(y.begin(), y.end(), z.begin()));
+    }
+    {
+    list<int>   x = {2, 3, 4};
+    vector<int> y(3);
+    list<int>   z = {10, 12, 14};
+    transform(x.begin(), x.end(), y.begin(), g);
+    assert(equal(y.begin(), y.end(), z.begin()));
+    }
+    {
+    list<int>   x = {2, 3, 4};
+    vector<int> y(3);
+    list<int>   z = {13, 15, 17};
+    transform(x.begin(), x.end(), y.begin(), h);
+    assert(equal(y.begin(), y.end(), z.begin()));
+    }
+    }
+
+
+
+    {
+    int i = 1;
+
+//  UF1  f = add_closure_4(i); //  error: no viable conversion from 'UF2' (aka 'function<int (int)>') to 'UF1' (aka 'int (*)(int)')
+    UF2  g = add_closure_4(i);
+    auto h = add_closure_4(i);
+
+    ++i;
+
+    assert(add_closure_4(i)(3) == 5);
+    assert(               g(3) == 6);
+    assert(               h(3) == 7);
+
+    {
+    list<int>   x = {2, 3, 4};
+    vector<int> y(3);
+    list<int>   z = {7, 9, 11};
+    transform(x.begin(), x.end(), y.begin(), add_closure_4(i));
+    assert(equal(y.begin(), y.end(), z.begin()));
+    }
+    {
+    list<int>   x = {2, 3, 4};
+    vector<int> y(3);
+    list<int>   z = {10, 12, 14};
+    transform(x.begin(), x.end(), y.begin(), g);
+    assert(equal(y.begin(), y.end(), z.begin()));
+    }
+    {
+    list<int>   x = {2, 3, 4};
+    vector<int> y(3);
+    list<int>   z = {13, 15, 17};
+    transform(x.begin(), x.end(), y.begin(), h);
+    assert(equal(y.begin(), y.end(), z.begin()));
+    }
+    }
+
     cout << "Done." << endl;
     return 0;}
