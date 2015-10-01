@@ -112,7 +112,7 @@ int main () {
     #ifdef __APPLE__
         assert(out.str() == "3.3621e-4932");
     #else
-        assert(out.str() == "0");
+        assert(out.str() == "3.3621e-4932");
     #endif
     }
     {
@@ -121,7 +121,7 @@ int main () {
     #ifdef __APPLE__
         assert(out.str() == "1.18973e+4932");
     #else
-        assert(out.str() == "inf");
+        assert(out.str() == "1.18973e+4932");
     #endif
     }
 
