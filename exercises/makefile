@@ -3,7 +3,10 @@ FILES :=     \
     IsPrime2 \
     StrCmp   \
     Equal    \
-    Incr
+    Incr     \
+    Copy     \
+    Fill     \
+    AllOf
 
 CXX        := g++-4.8
 CXXFLAGS   := -pedantic -std=c++11 -Wall

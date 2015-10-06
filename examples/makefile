@@ -16,9 +16,9 @@ FILES :=              \
     Operators         \
     Selection         \
     Iteration         \
-    Lambdas           \
     StackVsHeap       \
-    Valgrind
+    Valgrind          \
+    Lambdas
 
 CXX        := g++-4.8
 CXXFLAGS   := -pedantic -std=c++11 -Wall
